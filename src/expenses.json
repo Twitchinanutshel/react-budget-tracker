@@ -1,0 +1,34 @@
+{
+  "expenses": [
+    {
+      "id": "1",
+      "name": "Groceries",
+      "cost": 150
+    },
+    {
+      "id": "2",
+      "name": "Rent",
+      "cost": 1200
+    },
+    {
+      "id": "3",
+      "name": "Electricity Bill",
+      "cost": 80
+    },
+    {
+      "id": "4",
+      "name": "Internet Subscription",
+      "cost": 60
+    },
+    {
+      "id": "5",
+      "name": "Gym Membership",
+      "cost": 45
+    },
+    {
+      "id": "6",
+      "name": "Dining Out",
+      "cost": 100
+    }
+  ]
+}
