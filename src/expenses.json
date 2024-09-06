@@ -1,5 +1,7 @@
 {
-  "budget": "2000",
+  "budget": {
+    "amount": "4000"
+  },
   "expenses": [
     {
       "id": "1",
@@ -30,6 +32,21 @@
       "id": "6",
       "name": "Dining Out",
       "cost": 100
+    },
+    {
+      "id": "485e",
+      "name": "",
+      "cost": null
+    },
+    {
+      "id": "1603",
+      "name": "china",
+      "cost": 540
+    },
+    {
+      "id": "abc6",
+      "name": "44",
+      "cost": 44
     }
   ]
 }

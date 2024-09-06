@@ -7,14 +7,14 @@ const Expenses = () => {
 
   useEffect(() => {
     const fetchExpenses = async () => {
-      const res = await fetch('http://localhost:5000/expenses');
+      const res = await fetch('/api/expenses');
       const data = await res.json();
       setExpenses(data);
     }
     fetchExpenses();
   }, [])
   return (
-    <div className='my-6'>
+    <div className='my-6 mx-3'>
       <h1 className='text-3xl mb-6'>Expenses</h1>
       <div>
         {expenses.map((expense) => (

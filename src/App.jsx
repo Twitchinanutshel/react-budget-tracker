@@ -7,13 +7,24 @@ document.body.style.backgroundColor = '#242424'
 
 function App() {
 
+  const addExpense = async (newExpense) => {
+    const res = await fetch('http://localhost:5000/expenses', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newExpense),
+    });
+    return;
+  };
+
   return (
     <>
       <div className='mx-12 my-6'>
         <Header />
         <MoneyTrackers />
         <Expenses />
-        <AddExpense />
+        <AddExpense addExpenseSave={addExpense} />
       </div>
     </>
   )

@@ -3,40 +3,44 @@ import { useState } from 'react'
 
 const AddExpense = ({ addExpenseSave }) => {
   const [name, setName] = useState('');
-  const [cost, setCost] = useState('');
+  const [cost, setCost] = useState();
 
   const handleSave = (e) => {
-    e.preventDefault()
     const newExpense = {
       name,
-      cost
+      cost: parseFloat(cost)
     }
     addExpenseSave(newExpense)
+
+    setName('');
+    setCost('');
   }
 
   return (
-    <div>
-      <h1>Add Expense</h1>
-      <form onSubmit={handleSave}>
-        <div className='flex'>
-          <div className='flex text-black'>
+    <div className='bg-zinc-700 mx-5 mt-8 w-5/12 p-2 rounded-md'>
+      <h1 className='pt-2 ml-3 mb-2 text-2xl'>Add Expense</h1>
+      <form className='p-3 text-lg' onSubmit={handleSave}>
+        <div className='flex space-x-12'>
+          <div className='flex space-x-2 text-black'>
             <p>Name:</p>
             <input
+              required
               type='text'
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className='flex text-black'>
+          <div className='flex space-x-2 text-black'>
             <p>Cost:</p>
             <input
+              required
               type='number'
               value={cost}
               onChange={(e) => setCost(e.target.value)}
             />
           </div>
         </div>
-        <button type='submit' >Save</button>
+        <button className='bg-blue-500 px-3 py-1 rounded-md mt-6 text-xl hover:bg-purple-500 active:bg-blue-500' type='submit'>Save</button>
       </form>
     </div>
   )
