@@ -1,6 +1,6 @@
 {
   "budget": {
-    "amount": "500"
+    "amount": "700"
   },
   "expenses": [
     {
@@ -17,6 +17,11 @@
       "id": "7396",
       "name": "Bills",
       "cost": 30
+    },
+    {
+      "id": "26df",
+      "name": "Dinner ",
+      "cost": 40
     }
   ]
 }

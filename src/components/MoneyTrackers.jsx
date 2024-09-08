@@ -13,16 +13,17 @@ const MoneyTrackers = () => {
       const data = await res.json();
       setExpenses(data);
     }
+    fetchExpenses();
+  }, [expenses]); // fetch the expenses
 
+  useEffect(() => {
     const fetchBudget = async () => {
       const res = await fetch('http://localhost:5000/budget/');
       const data = await res.json();
       setBudget(data.amount);
     }
-
-    fetchExpenses();
     fetchBudget();
-  }, [expenses]); // fetch the expenses, and the budget data
+  }, []); // fetch budget, it is an a seperate useEffect because when you have expenses in the array dependency for fetchExpenses, trying to edit the budget is impossible.
 
 
   const totalExpense = expenses.reduce((total, expense) => {
