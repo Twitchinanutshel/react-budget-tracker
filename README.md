@@ -16,3 +16,9 @@ Features include:
 - Tracking of how much is spent and how much is remaining in the set budget
 - Able to add expense with name and cost
 - Able to delete expense
+
+![Screenshot 2024-09-08 121322](https://github.com/user-attachments/assets/c706b5ad-e0d7-4ea4-9a50-9010e3cd3364)
+(editing budget)
+
+![Screenshot 2024-09-08 121358](https://github.com/user-attachments/assets/7352ba0d-dc1d-4dc6-b229-2cfb200854d5)
+(deleted all expenses)
