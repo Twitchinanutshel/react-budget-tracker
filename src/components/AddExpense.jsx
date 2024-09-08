@@ -6,6 +6,7 @@ const AddExpense = ({ addExpenseSave }) => {
   const [cost, setCost] = useState();
 
   const handleSave = (e) => {
+    e.preventDefault()
     const newExpense = {
       name,
       cost: parseFloat(cost)

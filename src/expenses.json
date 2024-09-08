@@ -1,52 +1,22 @@
 {
   "budget": {
-    "amount": "4000"
+    "amount": "500"
   },
   "expenses": [
     {
-      "id": "1",
-      "name": "Groceries",
-      "cost": 150
+      "id": "de13",
+      "name": "Rent ",
+      "cost": 400
     },
     {
-      "id": "2",
-      "name": "Rent",
-      "cost": 1200
+      "id": "0aad",
+      "name": "Groceries ",
+      "cost": 70
     },
     {
-      "id": "3",
-      "name": "Electricity Bill",
-      "cost": 80
-    },
-    {
-      "id": "4",
-      "name": "Internet Subscription",
-      "cost": 60
-    },
-    {
-      "id": "5",
-      "name": "Gym Membership",
-      "cost": 45
-    },
-    {
-      "id": "6",
-      "name": "Dining Out",
-      "cost": 100
-    },
-    {
-      "id": "485e",
-      "name": "",
-      "cost": null
-    },
-    {
-      "id": "1603",
-      "name": "china",
-      "cost": 540
-    },
-    {
-      "id": "abc6",
-      "name": "44",
-      "cost": 44
+      "id": "7396",
+      "name": "Bills",
+      "cost": 30
     }
   ]
 }

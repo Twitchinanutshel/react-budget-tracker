@@ -22,7 +22,7 @@ const MoneyTrackers = () => {
 
     fetchExpenses();
     fetchBudget();
-  }, []); // fetch the expenses, and the budget data
+  }, [expenses]); // fetch the expenses, and the budget data
 
 
   const totalExpense = expenses.reduce((total, expense) => {
