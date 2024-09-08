@@ -14,5 +14,5 @@ export default defineConfig({
       },
     },
   },
-  base: "/react-budget-tracker/"
+  base: "/react-budget-tracker"
 })
